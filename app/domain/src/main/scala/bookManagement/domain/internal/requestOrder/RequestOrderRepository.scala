@@ -1,0 +1,3 @@
+package bookManagement.domain.internal.requestOrder
+
+trait RequestOrderRepository

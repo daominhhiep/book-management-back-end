@@ -1,0 +1,16 @@
+#book
+GET           /api/books                              @bookManagement.port.primary.webService.restAdapter.controller.book.BookController.list
+GET           /api/books/:id                          @bookManagement.port.primary.webService.restAdapter.controller.book.BookController.findById(id: Int)
+POST          /api/books                              @bookManagement.port.primary.webService.restAdapter.controller.book.BookController.create
+PUT           /api/books                              @bookManagement.port.primary.webService.restAdapter.controller.book.BookController.update
+DELETE        /api/books/:id                          @bookManagement.port.primary.webService.restAdapter.controller.book.BookController.delete(id: Int)
+
+#category
+GET           /api/categories                         @bookManagement.port.primary.webService.restAdapter.controller.category.CategoryController.list
+
+#borrowingHistory
+GET           /api/borrowing-histories                @bookManagement.port.primary.webService.restAdapter.controller.borrowingHistory.BorrowingHistoryController.list
+GET           /api/borrowing-histories-by-book        @bookManagement.port.primary.webService.restAdapter.controller.borrowingHistory.BorrowingHistoryController.getByBookId(bookId: Int)
+POST          /api/borrowing-histories                @bookManagement.port.primary.webService.restAdapter.controller.borrowingHistory.BorrowingHistoryController.create
+PUT           /api/borrowing-histories                @bookManagement.port.primary.webService.restAdapter.controller.borrowingHistory.BorrowingHistoryController.update
+DELETE        /api/borrowing-histories/:id            @bookManagement.port.primary.webService.restAdapter.controller.borrowingHistory.BorrowingHistoryController.delete(id: Int)

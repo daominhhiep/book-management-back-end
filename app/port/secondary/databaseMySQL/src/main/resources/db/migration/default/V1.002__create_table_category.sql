@@ -1,0 +1,6 @@
+CREATE TABLE category(
+     category_id INT NOT NULL AUTO_INCREMENT,
+     name VARCHAR(255) NOT NULL UNIQUE,
+     PRIMARY KEY (category_id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
